@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    background-color: rgba();
+}
+
+header {
+    grid-column: 2/8;
+    background-color: #AF2F2F;
+    height: 50px;
+}
+
+.hero {
+    grid-column: 3/7;
+    background-color: #202BFF;
+    height: 200px;
+}
+
+.main-content {
+    grid-column: 2/8;
+    background-color: #B7FF00;
+    height: 500px;
+}
+
+.footer {
+    grid-column: 2/8;
+    background-color: #D9D9D9;
+    height: 50px;
+}
