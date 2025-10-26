@@ -17,7 +17,7 @@ header {
     background-color: black;
 }
 
-header ul {
+header ul 
     display: flex;
     flex-direction: row;
     justify-content: center;
