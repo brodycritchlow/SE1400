@@ -148,3 +148,64 @@ header ul li a.logo {
     padding-bottom: 25px;
     padding-top: 25px;
 }
+
+@media only screen and (max-width: 991px) {
+    .wrapper {
+        grid-template-columns: 1fr 768px 1fr;
+    }
+
+    header,
+    .hero,
+    .main-content,
+    .footer {
+        grid-column: 2;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    header,
+    .hero,
+    .main-content,
+    .footer {
+        grid-column: 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header ul li:first-child {
+        display: none;
+    }
+
+    .subgrid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .subgrid-container div {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+        margin-left: -15px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    header ul li a {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
