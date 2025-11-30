@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues - Daisy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo">DAISY</a></li>
+                    <li><a href="venues.html">Venues</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="plan.html">My Plan</a></li>
+                    <li><a href="signin.html" id="auth-button">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <p class="hero-text">Find Your Perfect <strong>Venue</strong></p>
+        </div>
+
+        <div class="main-content">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="https://example.com/elegant-ballroom" target="_blank">
+                        <img src="imgs/venue-1.jpg" alt="Elegant Ballroom">
+                        <h3>Elegant Ballroom</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Elegant Ballroom', 'venue', 'imgs/venue-1.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/crystal-hall" target="_blank">
+                        <img src="imgs/venue-2.jpg" alt="Crystal Hall">
+                        <h3>Crystal Hall</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Crystal Hall', 'venue', 'imgs/venue-2.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/beachside-ceremony" target="_blank">
+                        <img src="imgs/venue-3.jpg" alt="Beachside Ceremony">
+                        <h3>Beachside Ceremony</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Beachside Ceremony', 'venue', 'imgs/venue-3.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/garden-reception" target="_blank">
+                        <img src="imgs/venue-4.jpg" alt="Garden Reception">
+                        <h3>Garden Reception</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Garden Reception', 'venue', 'imgs/venue-4.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/waterfront-pavilion" target="_blank">
+                        <img src="imgs/venue-5.jpg" alt="Waterfront Pavilion">
+                        <h3>Waterfront Pavilion</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Waterfront Pavilion', 'venue', 'imgs/venue-5.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/grand-ballroom" target="_blank">
+                        <img src="imgs/venue-6.jpg" alt="Grand Ballroom">
+                        <h3>Grand Ballroom</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Grand Ballroom', 'venue', 'imgs/venue-6.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/rustic-dining" target="_blank">
+                        <img src="imgs/venue-7.jpg" alt="Rustic Dining">
+                        <h3>Rustic Dining</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Rustic Dining', 'venue', 'imgs/venue-7.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/garden-lawn" target="_blank">
+                        <img src="imgs/venue-8.jpg" alt="Garden Lawn">
+                        <h3>Garden Lawn</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Garden Lawn', 'venue', 'imgs/venue-8.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/mountain-lodge" target="_blank">
+                        <img src="imgs/venue-9.jpg" alt="Mountain Lodge">
+                        <h3>Mountain Lodge</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Mountain Lodge', 'venue', 'imgs/venue-9.jpg')">Add to Plan</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="cta">
+                Want to add your venue / vendor to our catalog? Apply to be vetted <a href="https://forms.gle/LaJeh5VDMgvi6ajR6" target="_blank">here</a>.
+            </div>
+            <br>
+            &copy; 2025-Present Brody Critchlow
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="plan.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Daisy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo">DAISY</a></li>
+                    <li><a href="venues.html">Venues</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="plan.html">My Plan</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <div class="signin-container">
+                <h2>Sign In</h2>
+
+                <button class="btn-primary" id="google-signin">
+                    Sign in with Google
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="cta">
+                Want to add your venue / vendor to our catalog? Apply to be vetted <a href="https://forms.gle/LaJeh5VDMgvi6ajR6" target="_blank">here</a>.
+            </div>
+            <br>
+            &copy; 2025-Present Brody Critchlow
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
