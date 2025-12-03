@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendors - Daisy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="logo">DAISY</a></li>
+                    <li><a href="venues.html">Venues</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="plan.html">My Plan</a></li>
+                    <li><a href="signin.html" id="auth-button">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <p class="hero-text">Discover Trusted <strong>Vendors</strong></p>
+        </div>
+
+        <div class="main-content">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="https://example.com/sweet-tiers-bakery" target="_blank">
+                        <img src="imgs/vendor-1.jpg" alt="Sweet Tiers Bakery">
+                        <h3>Sweet Tiers Bakery</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Sweet Tiers Bakery', 'vendor', 'imgs/vendor-1.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/timeless-moments-photography" target="_blank">
+                        <img src="imgs/vendor-2.jpg" alt="Timeless Moments Photography">
+                        <h3>Timeless Moments Photography</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Timeless Moments Photography', 'vendor', 'imgs/vendor-2.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/petal-perfect-florals" target="_blank">
+                        <img src="imgs/vendor-3.jpg" alt="Petal Perfect Florals">
+                        <h3>Petal Perfect Florals</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Petal Perfect Florals', 'vendor', 'imgs/vendor-3.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/green-leaf-designs" target="_blank">
+                        <img src="imgs/vendor-4.jpg" alt="Green Leaf Designs">
+                        <h3>Green Leaf Designs</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Green Leaf Designs', 'vendor', 'imgs/vendor-4.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/blooming-bouquets" target="_blank">
+                        <img src="imgs/vendor-5.jpg" alt="Blooming Bouquets">
+                        <h3>Blooming Bouquets</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Blooming Bouquets', 'vendor', 'imgs/vendor-5.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/elegant-confections" target="_blank">
+                        <img src="imgs/vendor-6.jpg" alt="Elegant Confections">
+                        <h3>Elegant Confections</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Elegant Confections', 'vendor', 'imgs/vendor-6.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/forever-events" target="_blank">
+                        <img src="imgs/vendor-7.jpg" alt="Forever Events">
+                        <h3>Forever Events</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Forever Events', 'vendor', 'imgs/vendor-7.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/moment-films" target="_blank">
+                        <img src="imgs/vendor-8.jpg" alt="Moment Films">
+                        <h3>Moment Films</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Moment Films', 'vendor', 'imgs/vendor-8.jpg')">Add to Plan</button>
+                </div>
+                <div class="grid-item">
+                    <a href="https://example.com/captured-love-photography" target="_blank">
+                        <img src="imgs/vendor-9.jpg" alt="Captured Love Photography">
+                        <h3>Captured Love Photography</h3>
+                    </a>
+                    <button class="btn-add-plan" onclick="addToPlan('Captured Love Photography', 'vendor', 'imgs/vendor-9.jpg')">Add to Plan</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="cta">
+                Want to add your venue / vendor to our catalog? Apply to be vetted <a href="https://forms.gle/LaJeh5VDMgvi6ajR6" target="_blank">here</a>.
+            </div>
+            <br>
+            &copy; 2025-Present Brody Critchlow
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="plan.js"></script>
+</body>
+</html>
